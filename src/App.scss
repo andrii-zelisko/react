@@ -1,0 +1,12 @@
+$white: #ffffff !default;
+$blue: #0070c0 !default;
+
+.left-person-block{
+    background-color: $blue;
+    color: $white;
+
+    .list-group-item {
+        background-color: $blue;
+        color: $white;
+    }
+}
