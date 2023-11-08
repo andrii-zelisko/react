@@ -21,7 +21,7 @@ function App() {
 
     const candidateButton = CandidatesList.map( (person) => {
        return (
-           <Card style={{ width: '18rem' }} key={person.fullName}>
+           <Card key={person.fullName}>
              <Card.Body>
                <Card.Title>{person.fullName}</Card.Title>
                <Card.Subtitle className="mb-2 text-muted">{person.activePosition}</Card.Subtitle>
