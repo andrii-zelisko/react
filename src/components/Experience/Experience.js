@@ -7,10 +7,10 @@ export default function Experience({experience}) {
             <Accordion.Item eventKey={index} key={item.company}>
                 <Accordion.Header>{item.company}</Accordion.Header>
                 <Accordion.Body>
-                    <div>{item.position}</div>
-                    <div>{item.date}</div>
+                    <div><b>{item.position}</b></div>
+                    <div className="date">{item.date}</div>
                     <div>{item.description}</div>
-                    <div>{item.technologies}</div>
+                    <div><i>{item.technologies}</i></div>
                 </Accordion.Body>
             </Accordion.Item>
         )
@@ -18,7 +18,7 @@ export default function Experience({experience}) {
     return (
         <>
             <Title text="Experience" />
-            <Accordion defaultActiveKey={['0']} alwaysOpen>
+            <Accordion defaultActiveKey='0'>
                   {experienceList}
             </Accordion>
         </>

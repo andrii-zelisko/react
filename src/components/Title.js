@@ -1,9 +1,9 @@
 export default function Title({text}) {
     return (
-        <p>
+        <div className='section-title'>
             <b>
                 {text}
             </b>
-        </p>
+        </div>
     )
 }

@@ -2,6 +2,9 @@ export const CandidatesList = [
     {
         id: 0,
         fullName: 'Andrii Zelisko',
+        birthday: '09 june 1992',
+        nationality: 'Ukrainian',
+        interest: 'music, codding, cooking',
         activePosition: 'Software Engineer',
         contact: [
             {
@@ -9,11 +12,11 @@ export const CandidatesList = [
                 description: 'andrii.zelisko@gmail.com'
             },
             {
-                text: 'linkedIn',
+                text: 'linkedin',
                 description: 'https://www.linkedin.com/in/andrii-zelisko-6056a3bb/',
             },
             {
-                text: 'Phone',
+                text: 'phone',
                 description: '+380636300529',
             }
         ],

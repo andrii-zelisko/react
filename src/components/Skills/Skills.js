@@ -1,16 +1,15 @@
 import Title from '../../components/Title';
-import ListGroup from 'react-bootstrap/ListGroup';
 
 export default function Skills({skills}) {
     const skillsList = skills.map((skill) => {
-        return <ListGroup.Item key={skill}>{skill}</ListGroup.Item>
+        return <span key={skill}>{skill} </span>
     });
     return (
         <div>
             <Title text="Skills" />
-            <ListGroup>
+            <div className="skills-items">
                 {skillsList}
-            </ListGroup>
+            </div>
         </div>
     )
 }

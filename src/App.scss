@@ -1,12 +1,134 @@
 $white: #ffffff !default;
-$blue: #0070c0 !default;
+$dark-blue: #1a253f !default;
+$light-blue: #96bbff !default;
+$description-blue: #d3d2ff !default;
+$body-color: #eaf0f7 !default;
+$date-color: #052d8c !default;
 
-.left-person-block{
-    background-color: $blue;
-    color: $white;
+body {
+    font-size: 14px;
+    font-family: 'Roboto-Regular', sans-serif;
+    background: $body-color;
+}
 
-    .list-group-item {
-        background-color: $blue;
-        color: $white;
+.candidates-navigation-block {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 0px;
+
+    .candidate-btn {
+        font-size: 14px;
+        padding: 5px 10px;
+        margin-right: 5px;
+    }
+}
+
+.candidate-quick-info {
+    background-color: $dark-blue;
+    padding: 30px 5px;
+    position: relative;
+    text-align: center;
+    color: $light-blue;
+    border-radius: 5px;
+    max-height: 370px;
+
+    h1 {
+        font-weight: bold;
+    }
+
+    h4 {
+        color: $description-blue;
+    }
+
+    a {
+        color: $description-blue;
+        text-decoration: none;
+        cursor: pointer;
+        line-height: 2.2rem;
+    }
+
+    .candidate-image {
+        width: 100px;
+        height: 100px;
+        border-radius: 90px;
+        min-height: 100px;
+        margin-bottom: 15px;
+        object-fit: cover;
+    }
+
+    .candidate-contact-block {
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        right: 0;
+    }
+}
+
+.candidate-full-info {
+    padding: 30px;
+    background: $white;
+
+    .section-title {
+        border-bottom: 3px solid $light-blue;
+        width: fit-content;
+        font-size: 18px;
+        color: $dark-blue;
+        margin-bottom: 15px;
+        letter-spacing: 2px;
+        line-height: 18px;
+    }
+
+    .skills-items {
+        span {
+            background: $date-color;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            margin-right: 5px;
+            display: inline-block;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+    }
+
+    .candidate-about-block {
+        font-size: 16px;
+        color: $dark-blue;
+    }
+
+    .candidate-about-additional-block {
+        margin-top: 40px;
+        > div {
+            margin-bottom: 8px;
+            font-size: 16px;
+            color: $dark-blue;
+
+            > span  {
+                color: $date-color;
+                font-weight: bold;
+                display: inline-block;
+                min-width: 170px;
+            }
+
+            > div {
+                display: inline;
+            }
+        }
+    }
+    .candidate-other-block {
+        margin-top: 30px;
+        font-size: 16px;
+
+        .accordion-header {
+            button {
+                font-size: 14px;
+            }
+        }
+
+        .date {
+            color: $date-color;
+            font-size: 12px;
+            font-weight: bold;
+        }
     }
 }

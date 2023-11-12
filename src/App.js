@@ -13,49 +13,60 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import { Card } from 'react-bootstrap';
+import myImage from './images/me.jpg';
 
 
 function App() {
     const [state, setState] = useState(CandidatesList[0]);
 
-    const candidateButton = CandidatesList.map( (person) => {
+    const candidateLists = CandidatesList.map( (person) => {
        return (
-           <Card key={person.fullName}>
-             <Card.Body>
-               <Card.Title>{person.fullName}</Card.Title>
-               <Card.Subtitle className="mb-2 text-muted">{person.activePosition}</Card.Subtitle>
-               <Button
-                  variant = {person.id === state.id ? 'primary' : 'light'}
-                  onClick = {() => {
-                      setState(CandidatesList[person.id]);
-                  }}
-              >
-                  Click
+             <Button className="candidate-btn" variant='success' onClick={() => setState(CandidatesList[person.id])}>
+                  {person.fullName}
               </Button>
-             </Card.Body>
-           </Card>
        )
     });
 
     return (
         <div className="App">
-            <Container>
+            <Container className="candidates-block">
                 <Row>
-                    <Col lg="2">
-                        {candidateButton}
+                    <Col lg="12" className="candidates-navigation-block">
+                        {candidateLists}
                     </Col>
-                    <Col lg="7">
+                </Row>
+                <Row>
+                    <Col lg="2" className="candidate-quick-info">
+                        <img src={myImage} className="candidate-image" alt={state.fullName} />
                         <h1>{state.fullName}</h1>
-                        <h3>{state.activePosition}</h3>
-                        <Summary summary={state.summary} />
-                        <Experience experience={state.experience} />
-                    </Col>
-                    <Col lg="3" className="left-person-block">
+                        <h4>{state.activePosition}</h4>
                         <Contact contact={state.contact} />
-                        <Skills skills={state.skills} />
-                        <Education education={state.education} />
-                        <Language language={state.language} />
+                    </Col>
+                    <Col lg="10" className="candidate-full-info">
+                        <Row>
+                            <Col lg="6" className="candidate-about-block">
+                                <Summary summary={state.summary} name={state.fullName} />
+                            </Col>
+                            <Col lg="1"></Col>
+                            <Col lg="5" className="candidate-about-additional-block">
+                                <div><span>Name: </span>{state.fullName}</div>
+                                <div><span>Birthday: </span> {state.birthday}</div>
+                                <div><span>Spoken Language: </span><Language language={state.language} /></div>
+                                <div><span>Nationality: </span>{state.nationality}</div>
+                                <div><span>Interest: </span>{state.interest}</div>
+                            </Col>
+                        </Row>
+                        <Row className="candidate-other-block">
+                            <Col lg="3">
+                                <Education education={state.education} />
+                            </Col>
+                            <Col lg="6">
+                                <Experience experience={state.experience} />
+                            </Col>
+                            <Col lg="3">
+                                <Skills skills={state.skills} />
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
             </Container>
