@@ -6,7 +6,7 @@ $body-color: #eaf0f7 !default;
 $date-color: #052d8c !default;
 
 body {
-    font-size: 14px;
+    font-size: 12px;
     font-family: 'Roboto-Regular', sans-serif;
     background: $body-color;
 }
@@ -30,7 +30,7 @@ body {
     text-align: center;
     color: $light-blue;
     border-radius: 5px;
-    max-height: 370px;
+    max-height: 420px;
 
     h1 {
         font-weight: bold;
