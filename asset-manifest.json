@@ -1,20 +1,14 @@
 {
   "files": {
-    "main.css": "/react/static/css/main.6d073793.css",
-    "main.js": "/react/static/js/main.366c4939.js",
+    "main.css": "/react/static/css/main.eaea754c.css",
+    "main.js": "/react/static/js/main.64951a5b.js",
     "static/media/me.jpg": "/react/static/media/me.1b6aec9b7c76f4b51f97.jpg",
-    "static/media/Roboto-Italic.ttf": "/react/static/media/Roboto-Italic.87f3afe16a8c3c370634.ttf",
-    "static/media/Roboto-Thin.ttf": "/react/static/media/Roboto-Thin.a732a12eb07742232407.ttf",
-    "static/media/Roboto-Regular.ttf": "/react/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
-    "static/media/Roboto-Black.ttf": "/react/static/media/Roboto-Black.cf56c1b149d0a5e8d7c6.ttf",
-    "static/media/Roboto-Bold.ttf": "/react/static/media/Roboto-Bold.f80816a5455d171f948d.ttf",
-    "static/media/Roboto-Light.ttf": "/react/static/media/Roboto-Light.333da16a3f3cc391d087.ttf",
     "index.html": "/react/index.html",
-    "main.6d073793.css.map": "/react/static/css/main.6d073793.css.map",
-    "main.366c4939.js.map": "/react/static/js/main.366c4939.js.map"
+    "main.eaea754c.css.map": "/react/static/css/main.eaea754c.css.map",
+    "main.64951a5b.js.map": "/react/static/js/main.64951a5b.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d073793.css",
-    "static/js/main.366c4939.js"
+    "static/css/main.eaea754c.css",
+    "static/js/main.64951a5b.js"
   ]
 }
