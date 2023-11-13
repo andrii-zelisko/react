@@ -3,24 +3,12 @@ $dark-blue: #1a253f !default;
 $light-blue: #96bbff !default;
 $description-blue: #d3d2ff !default;
 $body-color: #eaf0f7 !default;
-$date-color: #052d8c !default;
+$main-blue: #052d8c !default;
 
 body {
-    font-size: 12px;
+    font-size: 14px;
     font-family: 'Roboto-Regular', sans-serif;
     background: $body-color;
-}
-
-.candidates-navigation-block {
-    margin-top: 20px;
-    margin-bottom: 30px;
-    padding: 0px;
-
-    .candidate-btn {
-        font-size: 14px;
-        padding: 5px 10px;
-        margin-right: 5px;
-    }
 }
 
 .candidate-quick-info {
@@ -28,20 +16,20 @@ body {
     padding: 30px 5px;
     position: relative;
     text-align: center;
-    color: $light-blue;
+    color: $white;
     border-radius: 5px;
     max-height: 420px;
 
-    h1 {
+    h2 {
         font-weight: bold;
     }
 
-    h4 {
-        color: $description-blue;
+    h5 {
+        color: $body-color;
     }
 
     a {
-        color: $description-blue;
+        color: $body-color;
         text-decoration: none;
         cursor: pointer;
         line-height: 2.2rem;
@@ -55,13 +43,6 @@ body {
         margin-bottom: 15px;
         object-fit: cover;
     }
-
-    .candidate-contact-block {
-        position: absolute;
-        bottom: 30px;
-        left: 0;
-        right: 0;
-    }
 }
 
 .candidate-full-info {
@@ -69,18 +50,19 @@ body {
     background: $white;
 
     .section-title {
-        border-bottom: 3px solid $light-blue;
+        border-bottom: 2px solid $main-blue;
         width: fit-content;
         font-size: 18px;
         color: $dark-blue;
         margin-bottom: 15px;
         letter-spacing: 2px;
         line-height: 18px;
+        font-weight: bold;
     }
 
     .skills-items {
         span {
-            background: $date-color;
+            background: $main-blue;
             color: white;
             padding: 5px 10px;
             border-radius: 15px;
@@ -104,7 +86,7 @@ body {
             color: $dark-blue;
 
             > span  {
-                color: $date-color;
+                color: $main-blue;
                 font-weight: bold;
                 display: inline-block;
                 min-width: 170px;
@@ -113,22 +95,6 @@ body {
             > div {
                 display: inline;
             }
-        }
-    }
-    .candidate-other-block {
-        margin-top: 30px;
-        font-size: 16px;
-
-        .accordion-header {
-            button {
-                font-size: 14px;
-            }
-        }
-
-        .date {
-            color: $date-color;
-            font-size: 12px;
-            font-weight: bold;
         }
     }
 }

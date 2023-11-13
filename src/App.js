@@ -1,74 +1,78 @@
 import { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
 import './App.scss';
 import { CandidatesList } from './candidates';
 import Contact from "./components/Contacts/Contact";
 import Skills from "./components/Skills/Skills";
 import Education from "./components/Education/Education";
-import Language from "./components/Language/Language";
 import Summary from "./components/Summary/Summary";
 import Experience from "./components/Experience/Experience";
-
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
+import About from "./components/About/About";
+import {Container, Grid, Button} from '@mui/material';
 import myImage from './images/me.jpg';
-
+import PersonIcon from '@mui/icons-material/Person';
 
 function App() {
+
     const [state, setState] = useState(CandidatesList[0]);
 
-    const candidateLists = CandidatesList.map( (person) => {
-       return (
-             <Button className="candidate-btn" variant='success' onClick={() => setState(CandidatesList[person.id])}>
-                  {person.fullName}
+    const candidates = CandidatesList.map( (person) => {
+        return (
+             <Button
+                key={ person.id }
+                startIcon={ <PersonIcon /> }
+                variant="contained"
+                size="large"
+                sx={{
+                    mr: 1,
+                    fontSize: 12
+                }}
+                onClick={ () => setState(CandidatesList[person.id]) }>
+                  { person.fullName }
               </Button>
-       )
+        )
     });
 
     return (
         <div className="App">
             <Container className="candidates-block">
-                <Row>
-                    <Col lg="12" className="candidates-navigation-block">
-                        {candidateLists}
-                    </Col>
-                </Row>
-                <Row>
-                    <Col lg="2" className="candidate-quick-info">
-                        <img src={myImage} className="candidate-image" alt={state.fullName} />
-                        <h1>{state.fullName}</h1>
-                        <h4>{state.activePosition}</h4>
-                        <Contact contact={state.contact} />
-                    </Col>
-                    <Col lg="10" className="candidate-full-info">
-                        <Row>
-                            <Col lg="6" className="candidate-about-block">
-                                <Summary summary={state.summary} name={state.fullName} />
-                            </Col>
-                            <Col lg="1"></Col>
-                            <Col lg="5" className="candidate-about-additional-block">
-                                <div><span>Name: </span>{state.fullName}</div>
-                                <div><span>Birthday: </span> {state.birthday}</div>
-                                <div><span>Spoken Language: </span><Language language={state.language} /></div>
-                                <div><span>Nationality: </span>{state.nationality}</div>
-                                <div><span>Interest: </span>{state.interest}</div>
-                            </Col>
-                        </Row>
-                        <Row className="candidate-other-block">
-                            <Col lg="3">
-                                <Education education={state.education} />
-                            </Col>
-                            <Col lg="6">
-                                <Experience experience={state.experience} />
-                            </Col>
-                            <Col lg="3">
-                                <Skills skills={state.skills} />
-                            </Col>
-                        </Row>
-                    </Col>
-                </Row>
+                <Grid container sx={{ mb: 2, mt: 2 }}>
+                    <Grid item lg={ 12 }>{ candidates }</Grid>
+                </Grid>
+                <Grid container>
+                    <Grid item lg={3} md={3} sm={12} xs={12} className="candidate-quick-info">
+                        <img src={ myImage } className="candidate-image" alt={ state.fullName } />
+                        <h2>{ state.fullName }</h2>
+                        <h5>{ state.activePosition }</h5>
+                        { state.contact && <Contact contact={ state.contact } iconSize={ 20 } /> }
+                    </Grid>
+                    <Grid item lg={9} md={9} sm={12} xs={12} className="candidate-full-info">
+                        <Grid container>
+                            <Grid item lg={6} className="candidate-about-block">
+                                { state.summary && <Summary summary={ state.summary } name={ state.fullName } /> }
+                            </Grid>
+                            <Grid item lg={6} className="candidate-about-additional-block">
+                                <About
+                                    fullName={ state.fullName }
+                                    birthday={ state.birthday }
+                                    language={ state.language }
+                                    nationality={ state.nationality }
+                                    interest={ state.interest }
+                                />
+                            </Grid>
+                        </Grid>
+                        <Grid container sx={{ mt: 5, fontSize: 16 }} className="candidate-other-block">
+                            <Grid item lg={3}>
+                                { state.education && <Education education={ state.education } iconSize={ 50 } /> }
+                            </Grid>
+                            <Grid item lg={6}>
+                                { state.experience && <Experience experience={ state.experience } iconSize={ 50 } /> }
+                            </Grid>
+                            <Grid item lg={3}>
+                                { state.skills && <Skills skills={ state.skills } /> }
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Grid>
             </Container>
         </div>
     );

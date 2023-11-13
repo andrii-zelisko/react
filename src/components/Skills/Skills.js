@@ -5,8 +5,8 @@ export default function Skills({skills}) {
         return <span key={skill}>{skill} </span>
     });
     return (
-        <div>
-            <Title text="Skills" />
+        <div style={{textAlign: 'center'}}>
+            <Title text="Skills" style={{textAlign: 'center'}} />
             <div className="skills-items">
                 {skillsList}
             </div>

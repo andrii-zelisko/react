@@ -64,4 +64,39 @@ export const CandidatesList = [
             },
         ]
     },
+    {
+        id: 1,
+        fullName: 'Test User',
+        birthday: 'Birthday',
+        nationality: 'Nationality',
+        interest: 'Text, Text, Text',
+        activePosition: 'Positon text',
+        contact: [
+            {
+                text: 'email',
+                description: 'example@gmail.com'
+            },
+            {
+                text: 'linkedin',
+                description: 'https://www.linkedin.com',
+            },
+            {
+                text: 'phone',
+                description: '+380636300529',
+            }
+        ],
+        skills: ['JavaScript', 'HTML5', 'CSS3', 'ReactJS', 'jQuery', 'Ajax', 'JSON', 'LESS', 'Agile Development', 'Figma'],
+        education: ['Lviv Polytechnic National University Computer Science Information Management Systems and Technologies Master’s degree'],
+        language: [
+            {
+                name: 'English',
+                level: 'Intermediate'
+            },
+            {
+                name: 'Ukrainian',
+                level: 'Native'
+            },
+        ],
+        summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    },
 ]
