@@ -3,98 +3,30 @@ $dark-blue: #1a253f !default;
 $light-blue: #96bbff !default;
 $description-blue: #d3d2ff !default;
 $body-color: #eaf0f7 !default;
-$main-blue: #052d8c !default;
 
 body {
     font-size: 14px;
-    font-family: 'Roboto-Regular', sans-serif;
+    font-family: "IBM Plex Sans" !important;
     background: $body-color;
 }
 
-.candidate-quick-info {
-    background-color: $dark-blue;
-    padding: 30px 5px;
-    position: relative;
-    text-align: center;
-    color: $white;
-    border-radius: 5px;
-    max-height: 420px;
-
-    h2 {
-        font-weight: bold;
-    }
-
-    h5 {
-        color: $body-color;
-    }
-
-    a {
-        color: $body-color;
-        text-decoration: none;
-        cursor: pointer;
-        line-height: 2.2rem;
-    }
-
-    .candidate-image {
-        width: 100px;
-        height: 100px;
-        border-radius: 90px;
-        min-height: 100px;
-        margin-bottom: 15px;
-        object-fit: cover;
-    }
+div, p, span, a {
+    font-size: 14px;
+    font-family: "IBM Plex Sans" !important;
+    color: $dark-blue;
 }
 
-.candidate-full-info {
-    padding: 30px;
-    background: $white;
 
-    .section-title {
-        border-bottom: 2px solid $main-blue;
-        width: fit-content;
-        font-size: 18px;
-        color: $dark-blue;
-        margin-bottom: 15px;
-        letter-spacing: 2px;
-        line-height: 18px;
-        font-weight: bold;
-    }
+.MuiBox-root,
+.MuiTypography-root {
+    font-family: "IBM Plex Sans" !important;
+    color: $dark-blue;
+}
 
-    .skills-items {
-        span {
-            background: $main-blue;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 15px;
-            margin-right: 5px;
-            display: inline-block;
-            margin-bottom: 8px;
-            font-size: 14px;
-        }
-    }
-
-    .candidate-about-block {
-        font-size: 16px;
-        color: $dark-blue;
-    }
-
-    .candidate-about-additional-block {
-        margin-top: 40px;
-        > div {
-            margin-bottom: 8px;
-            font-size: 16px;
-            color: $dark-blue;
-
-            > span  {
-                color: $main-blue;
-                font-weight: bold;
-                display: inline-block;
-                min-width: 170px;
-            }
-
-            > div {
-                display: inline;
-            }
-        }
+a {
+    color: $body-color;
+    cursor: pointer;
+    &:hover {
+        color: $body-color;
     }
 }

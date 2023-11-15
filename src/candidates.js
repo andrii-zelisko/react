@@ -21,7 +21,10 @@ export const CandidatesList = [
             }
         ],
         skills: ['JavaScript', 'HTML5', 'CSS3', 'ReactJS', 'jQuery', 'Ajax', 'JSON', 'LESS', 'Agile Development', 'Figma'],
-        education: ['Lviv Polytechnic National University Computer Science Information Management Systems and Technologies Master’s degree'],
+        education: [ {
+            name: 'Lviv Polytechnic National University',
+            level: 'Computer Science Information Management Systems and Technologies Master’s degree'
+        }],
         language: [
             {
                 name: 'English',
@@ -86,7 +89,10 @@ export const CandidatesList = [
             }
         ],
         skills: ['JavaScript', 'HTML5', 'CSS3', 'ReactJS', 'jQuery', 'Ajax', 'JSON', 'LESS', 'Agile Development', 'Figma'],
-        education: ['Lviv Polytechnic National University Computer Science Information Management Systems and Technologies Master’s degree'],
+        education: [ {
+                    name: 'Lviv Polytechnic National University',
+                    level: 'Computer Science Information Management Systems and Technologies Master’s degree'
+        }],
         language: [
             {
                 name: 'English',
