@@ -1,14 +1,26 @@
 {
   "files": {
-    "main.css": "/react/static/css/main.eaea754c.css",
-    "main.js": "/react/static/js/main.64951a5b.js",
+    "main.css": "/react/static/css/main.0e41f0c0.css",
+    "main.js": "/react/static/js/main.2796bf2f.js",
     "static/media/me.jpg": "/react/static/media/me.1b6aec9b7c76f4b51f97.jpg",
+    "static/media/ibm-plex-sans-latin-400-normal.woff2": "/react/static/media/ibm-plex-sans-latin-400-normal.198edc1f5e61a3940f35.woff2",
+    "static/media/ibm-plex-sans-latin-400-normal.woff": "/react/static/media/ibm-plex-sans-latin-400-normal.26f87999b316dfb9a41e.woff",
+    "static/media/ibm-plex-sans-latin-ext-400-normal.woff2": "/react/static/media/ibm-plex-sans-latin-ext-400-normal.f16460285d7ee089d39e.woff2",
+    "static/media/ibm-plex-sans-latin-ext-400-normal.woff": "/react/static/media/ibm-plex-sans-latin-ext-400-normal.3d8d457e5b04886f0311.woff",
+    "static/media/ibm-plex-sans-cyrillic-400-normal.woff2": "/react/static/media/ibm-plex-sans-cyrillic-400-normal.496b1fd454d2cf535c9e.woff2",
+    "static/media/ibm-plex-sans-cyrillic-400-normal.woff": "/react/static/media/ibm-plex-sans-cyrillic-400-normal.9ad4be8ee1fdeec077cf.woff",
+    "static/media/ibm-plex-sans-greek-400-normal.woff2": "/react/static/media/ibm-plex-sans-greek-400-normal.3a057227a4ac726b71f5.woff2",
+    "static/media/ibm-plex-sans-cyrillic-ext-400-normal.woff2": "/react/static/media/ibm-plex-sans-cyrillic-ext-400-normal.56b6c5df575156819cfa.woff2",
+    "static/media/ibm-plex-sans-greek-400-normal.woff": "/react/static/media/ibm-plex-sans-greek-400-normal.6aceaf9dadc6ba56d590.woff",
+    "static/media/ibm-plex-sans-cyrillic-ext-400-normal.woff": "/react/static/media/ibm-plex-sans-cyrillic-ext-400-normal.ddb7009e517f27508df2.woff",
+    "static/media/ibm-plex-sans-vietnamese-400-normal.woff2": "/react/static/media/ibm-plex-sans-vietnamese-400-normal.9738af472640eb4267fe.woff2",
+    "static/media/ibm-plex-sans-vietnamese-400-normal.woff": "/react/static/media/ibm-plex-sans-vietnamese-400-normal.3a46c7516cca93f3063d.woff",
     "index.html": "/react/index.html",
-    "main.eaea754c.css.map": "/react/static/css/main.eaea754c.css.map",
-    "main.64951a5b.js.map": "/react/static/js/main.64951a5b.js.map"
+    "main.0e41f0c0.css.map": "/react/static/css/main.0e41f0c0.css.map",
+    "main.2796bf2f.js.map": "/react/static/js/main.2796bf2f.js.map"
   },
   "entrypoints": [
-    "static/css/main.eaea754c.css",
-    "static/js/main.64951a5b.js"
+    "static/css/main.0e41f0c0.css",
+    "static/js/main.2796bf2f.js"
   ]
 }
